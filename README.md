@@ -1,1 +1,3 @@
-# Trilha JS Developer - Pokedex
+# Trilha JS Developer - Pokedex - DIO | Inter Bootcamp
+
+
