@@ -18,7 +18,6 @@ function loadPokemonItens(offset, limit) {
     })
     .catch((error) => console.error(error))
 }
-
 loadPokemonItens();
 
 
