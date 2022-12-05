@@ -1,0 +1,248 @@
+#fade {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;  
+}
+
+.modal-container.show-modal, div.show-modal {
+  display: block;
+}
+
+.button, .topo {
+  width: 90vw;
+  max-width: 425px;
+  margin: auto;
+}
+
+button#back-button {
+  padding: 1rem 1rem 1rem 0;
+}
+
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  animation: modal 1s;
+}
+
+.modal-pokemon .topo {
+  height: 230px;
+}
+
+.modal-pokemon .bottom {
+  height: 700px;
+  background-color: #FFF;
+  border-radius: 3rem 3rem 0 0;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-pokemon button {
+  background-color: transparent;
+  border: none;
+  align-self: flex-start;
+  cursor: pointer;
+  margin: 2rem 0 1rem 0;
+  color: #FFF;
+}
+
+.modal-header h2 {
+  color: #FFF;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.modal-header span {
+  align-self: flex-end;
+  color: #FFF;
+}
+
+.modal-header ol {
+  margin-top: -1.3rem;
+}
+
+.modal-header ol li {
+  width: 70px;
+  display: inline-block;
+  margin-right: .25rem;
+}
+
+.modal-header img {
+  margin-top: 1rem;
+  max-width: 180px;
+  align-self: center;
+}
+
+/* Style da aba (tab) */
+.tab {
+  max-width: 425px;
+  overflow: hidden;
+  padding-top: 2rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  margin: 1rem auto;
+}
+
+/* Style dos botões dentro da aba */
+.tab button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #CCC;
+  background-color: #FFF;
+  padding-bottom: 1rem;
+  margin: 0 1rem;
+}
+
+/* Muda a cor do fundo do botão on hover */
+.tab button:hover {
+  color: #000;
+}
+
+/* Cria estilo da aba ativa/atual - tabalinks class */
+.tab button.active {
+  color: #000;
+  border-bottom: 2px solid #6f38f6;
+}
+
+/* Estilo do conteúdo de cada aba */
+.tabcontent {
+  display: none;
+  width: 90vw;
+  max-width: 425px;
+  margin: auto;
+  padding: 1rem 0;
+  font-weight: 300;
+}
+
+.tabcontent .data-container {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.left-data span, .right-data p {
+  margin: 1rem 0;
+}
+
+.right-data p {
+  font-weight: 500;
+}
+
+.right-data p:nth-child(3) {
+  text-transform: capitalize;
+}
+
+.tabcontent span {
+  display: block;
+}
+
+.stats-container table {
+  width: 100%;
+}
+
+table tr td {
+  font-size: .875rem;
+  padding: .25rem;
+}
+
+td.stats {
+  width: 40px;
+}
+
+td.number-stats {
+  font-weight: 500;
+  width: 20px;
+  text-align: center;
+}
+
+td.progress {
+  width: 150px;
+}
+
+progress {
+  width: 100%;
+  height: 3px;
+  -webkit-appearance: none;
+}
+
+.progress progress {
+  vertical-align: middle;
+}
+
+::-webkit-progress-bar {
+  background-color: rgba(233, 229, 229, 0.918);
+  border-radius: 10px;
+}
+
+::-webkit-progress-value {
+  border-radius: 10px;
+  background-color: #77c850;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading img {
+  width: 300px;
+  object-fit: cover;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 424.9px) {  
+  .modal-container {
+    top: 50%;
+    left: 50%;
+    width: 425px;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  
+  .modal-pokemon .bottom { 
+    height: 300px;
+  }
+  
+  .modal-pokemon {
+    border-radius: 1rem;
+  }
+
+  .modal-pokemon .bottom {
+    border-radius: 3rem 3rem 1rem 1rem;
+  }
+
+  .button, .topo, .bottom {
+    padding: 0 1.5rem
+  }
+
+  .tabcontent {
+    width: 100%;
+  }
+}

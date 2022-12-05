@@ -1,46 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon.png"
+    />
     <title>Pokedex</title>
 
     <!-- Normalize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Font Roboto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Nosso CSS -->
-    <link rel="stylesheet" href="/assets/css/global.css">
-    <link rel="stylesheet" href="/assets/css/pokedex.css">
-</head>
-
-<body>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/global.css" />
+    <link rel="stylesheet" href="/assets/css/pokedex.css" />
+  </head>
+  <body>
     <section class="content">
-        <h1>Pokedex</h1>
+      <div class="cabeçalho">
+        <img
+          src="./assets/images/pokelogo.png"
+          alt="Logo Pokemon"
+          id="pokelogo"
+        />
+      </div>
 
-        <ol id="pokemonList" class="pokemons">
-            <!-- ..... Pokemons here ..... -->
-        </ol>
+      <ol id="pokemonList" class="pokemons">
+        <!-- ..... Pokemons here ..... -->
+      </ol>
 
-        <div class="pagination">
-            <button id="loadMoreButton" type="button">
-                Load More
-            </button>
-        </div>
+      <div class="pagination">
+        <button id="loadMoreButton" type="button">Load More</button>
+      </div>
     </section>
 
-    <!-- Nosso JS -->
-    <script src="/assets/js/pokemon-model.js"></script>
-    <script src="/assets/js/poke-api.js"></script>
-    <script src="/assets/js/main.js"></script>
-</body>
+    <div id="fade"></div>
 
+    <div class="modal-container" id="modal">
+      <div class="modal-pokemon white" id="modal-pokemon">
+        <div class="button">
+          <button id="back-button">
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </button>
+        </div>
+        <div class="topo" id="topo">
+          <!-- Aqui vai o header -->
+          <div class="loading">
+            <img src="assets/images/pokeball.gif" alt="Loading" />
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="modal-body">
+            <div class="nav-tab">
+              <!-- Cria o Menu -->
+              <div class="tab">
+                <button
+                  class="tablinks"
+                  onclick="openTab(event, 'first')"
+                  id="defaultOpen"
+                >
+                  About
+                </button>
+                <button class="tablinks" onclick="openTab(event, 'second')">
+                  Base Stats
+                </button>
+              </div>
+              <!-- Conteúdo da Primeira Aba -->
+              <div id="first" class="tabcontent">
+                <div class="data-container" id="data-container">
+                  <div>Loading...</div>
+                  <!-- Aqui vai os detalhes do pokemon -->
+                </div>
+              </div>
+              <!-- Conteúdo da Segunda Aba -->
+              <div id="second" class="tabcontent">
+                <div class="stats-container" id="stats-container">
+                  <!-- Aqui vai os stats       -->
+                  <div>Loading...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Nosso JS -->
+        <script src="/assets/js/pokemon-model.js" defer></script>
+        <script src="/assets/js/poke-api.js" defer></script>
+        <script src="/assets/js/main.js" defer></script>
+
+  </body>
 </html>

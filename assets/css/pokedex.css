@@ -6,6 +6,10 @@
     list-style: none;
 }
 
+.white {
+    background-color: #FFF;
+  }
+
 .normal {
     background-color: #a6a877;
 }
@@ -84,7 +88,14 @@
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
+    transition: 500ms linear;    
 }
+
+.pokemon:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.36)) brightness(1.1);
+  }
+
 
 .pokemon .number {
     color: #000;
