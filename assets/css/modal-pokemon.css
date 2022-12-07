@@ -114,7 +114,7 @@ button#back-button {
   color: #000;
 }
 
-/* Cria estilo da aba ativa/atual - tabalinks class */
+/* Cria estilo da aba ativa/atual - tablinks class */
 .tab button.active {
   color: #000;
   border-bottom: 2px solid #6f38f6;

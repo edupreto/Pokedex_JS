@@ -6,3 +6,10 @@ class Pokemon {
     types = [];
     photo;
 }
+
+class PokemonClicked extends Pokemon {
+    height;
+    weight;
+    abilities = [];
+    stats = [];
+  }
