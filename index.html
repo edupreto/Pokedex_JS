@@ -4,16 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png" />
-    
     <!-- Ícone fontawesome -->
-    <script src="https://kit.fontawesome.com/92d8068ee3.js" crossorigin="anonymous" ></script>
-    
+    <script src="https://kit.fontawesome.com/92d8068ee3.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/global.css" />
     <link rel="stylesheet" href="/assets/css/pokedex.css" />
     <link rel="stylesheet" href="assets/css/modal-pokemon.css" />
-    
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png" />
     <!-- Script com os modelos pokemon refatorados -->
     <script src="/assets/js/pokemon-model.js" defer></script>
     <!-- Script que faz as requisições à API -->
@@ -22,22 +19,23 @@
     <script src="/assets/js/main.js" defer></script>
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
     <!-- Font Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" />
-    
     <title>Pokedex</title>
   </head>
   <body>
     <section class="content">
       <div class="img-header">
-        <img src="./assets/images/pokelogo.png" alt="Logo Pokemon" id="pokelogo" />
+        <img
+          src="./assets/images/pokelogo.png"
+          alt="Logo Pokemon"
+          id="pokelogo"
+        />
       </div>
 
       <ol id="pokemonList" class="pokemon-list">
-        
         <!-- ..... Pokemons ..... -->
       </ol>
 
@@ -51,22 +49,31 @@
     <div class="modal-container" id="modal">
       <div class="modal-pokemon white" id="modal-pokemon">
         <div class="button">
-          <button id="back-button"><i class="fa-solid fa-arrow-left-long"></i></button>
+          <button id="back-button">
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </button>
         </div>
         <div class="topo" id="topo">
           <!-- Aqui vai o header -->
           <div class="loading">
-            <img src="assets/images/pokeball.gif" alt="Loading">
+            <img src="assets/images/pokeball.gif" alt="Loading" />
           </div>
         </div>
         <div class="bottom">
           <div class="modal-body">
-  
             <div class="nav-tab">
-             <!-- Cria o Menu -->
+              <!-- Cria o Menu -->
               <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'first')" id="defaultOpen">About</button>
-                <button class="tablinks" onclick="openTab(event, 'second')">Base Stats</button>
+                <button
+                  class="tablinks"
+                  onclick="openTab(event, 'first')"
+                  id="defaultOpen"
+                >
+                  About
+                </button>
+                <button class="tablinks" onclick="openTab(event, 'second')">
+                  Base Stats
+                </button>
               </div>
               <!-- Conteúdo da Primeira Aba -->
               <div id="first" class="tabcontent">
@@ -83,9 +90,9 @@
                 </div>
               </div>
             </div>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   </body>
-  </html>
+</html>

@@ -16,7 +16,7 @@ body {
     background-color: #fff;
 }
 
-.img-header{
+.content .img-header{
     width: 100%;
     height: 7rem;
     display: flex;
