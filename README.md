@@ -1,6 +1,24 @@
-# Trilha JS Developer - Pokedex - DIO | Inter Bootcamp
+
+# JS Developer - Pokedex - DIO | Inter Bootcamp
+
+## Pokemons
+
+<p align="center">
+<img src="/assets/images/PokedexT1.jpeg"/>
+</p>
+
+## Pokemons-detail
+
+<p align="center">
+<img src="/assets/images/PokedexT2.jpeg"/>
+</p>
+
+## Pokemons-detail
+
+<p align="center">
+<img src="/assets/images/PokedexT3.jpeg"/>
+</p>
 
 
-- Design inspired by [Pokedex App design](https://dribbble.com/shots/6563578-Pokedex-App-Animation) mabe by [Saepul Nahwan](https://www.instagram.com/saepulnahwan/).
-
+Inspirado no Design  [Pokedex App design](https://dribbble.com/shots/6563578-Pokedex-App-Animation)  Utiliza a API - [PokeApi](https://www.pokeapi.co">pokeapi.co)
 

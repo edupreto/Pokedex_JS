@@ -12,7 +12,7 @@ let offset = 0;
 function convertPokemonToLi(pokemon) {
     return `
     <li class="pokemon ${pokemon.type}" id="pokemon-list" onclick="getClickedPokemon(${pokemon.number})">
-      <span class="number" id="span-number">#${pokemon.number}</span>
+      <span class="number" id="span-number">#00${pokemon.number}</span>
       <span class="name" id="span-name">${pokemon.name}</span>
       <div class="detail" id="div-detail">
         <ol class="types">
@@ -78,7 +78,7 @@ function convertPokemonHeaderToModal(pokemon) {
     return `
     <div class="modal-header">
       <h2>${pokemon.name}</h2>
-      <span>#${pokemon.number}</span>
+      <span>#00${pokemon.number}</span>
       <ol class="types">
         ${pokemon.types.map((type) => `<li class="type ${pokemon.type}">${type}</li>`).join("")}
       </ol>
@@ -142,7 +142,7 @@ function convertPokemonStatsToModal(pokemon) {
       </tr>
       <tr>
         <td class="stats">Total</td>
-        <td class="number-stats">${sum}</td>
+        <td class="number-stats">#${sum}</td>
         <td class="progress"><progress min="0" max="600" value="${sum}"></progress></td>
       </tr>
     </table>
