@@ -19,7 +19,6 @@
 <img src="/assets/images/PokedexT3.jpeg"/>
 </p>
 
-
-- Inspirado no Design  [Pokedex App design](https://dribbble.com/shots/6563578-Pokedex-App-Animation)
-- Utiliza a API - [PokeApi](https://www.pokeapi.co)
-- Página do Projeto [Pokedex](https://edupreto.github.io/assets/css/pokedex.css)
+- <a href="https://edupreto.github.io/Pokedex_JS" target="_blank">Página do Projeto</a>
+- <a href="https://dribbble.com/shots/6563578-Pokedex-App-Animation" target="_blank">Design</a>
+- <a href="https://www.pokeapi.co" target="_blank">API</a>
