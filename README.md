@@ -21,5 +21,5 @@
 
 
 - Inspirado no Design  [Pokedex App design](https://dribbble.com/shots/6563578-Pokedex-App-Animation)
-- Utiliza a API - [PokeApi](https://www.pokeapi.co">pokeapi.co)
+- Utiliza a API - [PokeApi](https://www.pokeapi.co)
 - Página do Projeto [Pokedex](https://edupreto.github.io/assets/css/pokedex.css)
